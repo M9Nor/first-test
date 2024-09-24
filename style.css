@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    
+
+}
+:root{
+    --primaryColor:#5D45FD;
+    --mainColor:#A89CFF;
+    --whiteColor:#E5E5E5;
+    --bgColor:#1E1B2E;
+    --pColor:#E5E5E5;
+    --grColor:#969799;
+    --bloColor:#5666FF;
+    --blackColor:#161616;
+}
+body{
+    background: var(--bgColor);
+
+}
+.nav-container{
+    width: 80%;
+    margin: auto;
+    max-width: 1500px; 
+}
+
+img{
+    width: 100%;
+}
+
+h1,h2, h3, h4, h5, h6{
+    color: var(--whiteColor);
+
+}
+p{
+    color: var(--pColor);
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+   
+}
+.btn-cta{
+    margin-top: 20px;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 5px 15px;
+    border: #e5e5e548 0.5px solid;
+    border-radius: 5px;
+}
+.btn-projects{
+    margin-top: 20px;
+    border: var(--primaryColor) 1px solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: var(--primaryColor);
+
+}
+
+/* Start our header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+/* background lines sami UI */
+
+.bg-lines span{
+    position: fixed;
+    top: 0;
+    z-index: -5;
+    height: 100%;
+    background: #96979919;
+    width: 1.5px;
+    -webkit-animation: left_Right 30s infinite;
+    animation: left_Right 30s infinite;
+}
+.bg-lines span:nth-child(1){
+    left: 10%;
+}
+.bg-lines span:nth-child(2){
+    left: 20%;
+}
+.bg-lines span:nth-child(3){
+    left: 30%;
+}
+.bg-lines span:nth-child(4){
+    left: 40%;
+}
+.bg-lines span:nth-child(5){
+    left: 50%;
+}
+.bg-lines span:nth-child(6){
+    left: 60%;
+}
+.bg-lines span:nth-child(7){
+    left: 70%;
+}
+.bg-lines span:nth-child(8){
+    left: 80%;
+}
+.bg-lines span:nth-child(9){
+    left: 90%;
+}
+@keyframes left_Right {
+    0%{
+        -webkit-transform:translateX(0) ;
+        transform: translateX(0px);
+    
+    }
+    50%{
+        -webkit-transform:translateX(-100px) ;
+        transform: translateX(-100px);
+    
+    }
+    0%{
+        -webkit-transform:translateX(0) ;
+        transform: translateX(0px);
+    
+    }
+    
+}
+ 
+
+/* backround end */
+.top-section{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+.top-section h2{
+   
+color: var(--primaryColor);
+    font-size: 2rem;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+header nav .logo img{
+    width: 70px;
+}
+header nav .links{
+    display: flex;
+    gap: 30px;
+}
+header nav .links a{
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+header nav .links a:hover{
+    color: var(--mainColor);
+    transform: scale(1.1);
+    
+}
+header nav .icons-social{
+    display: flex;
+    gap: 20px;
+    color: blanchedalmond;
+    font-size: 2em;
+}
+header nav .icons-social a{
+    color: var(--mainColor);
+    transition: 0.4s ease;
+
+}
+header nav .icons-social a:hover{
+    color: var(--primaryColor);
+    transform: scale(0.9);
+}
+
+/* hero section start */
+.hero{
+    padding: 200px;
+    height: 100vh;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .cantainer-text{
+    width: 50%;
+
+}
+.hero .cantainer-text h2{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+.hero .cantainer-text p{
+    color: var(--pColor);
+    font-size: 1.2rem;
+    width: 70%;
+
+}
+.hero .container-img{
+    width: 30%;
+    
+}
+/* start about us section */
+.about{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.about .conntainer-about{
+    /* background: var(--bgColor); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    padding:50px; 
+    border-radius:20px;
+    border: 2px white solid;
+    width: 77%;
+   margin-left: -30px;
+
+
+}
+.about .conntainer-about .about-img{
+    width: 100%;
+}
+.about .about-text{
+    width: 70%;
+
+}
+.about .about-text h2{
+    text-transform: capitalize;
+}
+.about .about-img img{ 
+    width: 80%;
+}
+
+.about .about-text ul{
+    display: flex;
+    color: var(--whiteColor);
+    margin: 30px 0px 30px;
+    flex-wrap: wrap;
+
+}
+
+.about .about-text ul li{
+    margin: 10px 0px ;
+    width: 40%;
+    font-weight: 500;
+}
+.about .about-text ul li i{
+    color: var(--bloColor);
+}
+/* the end about section */
+
+
+/* start in Services Section */
+.services{
+    height: 80vh;
+}
+
+.services .cards-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0px;
+    
+
+}
+
+.services .cards-section .card{
+    width: 20%;
+    text-align: center;
+    padding: 50px 10px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 12px;
+    gap: 10px;
+    transition: 0.7s ease;
+}
+.services .cards-section .card i{
+    font-size: 4.6rem;
+    color: var(--primaryColor);
+}
+
+.services .cards-section .card h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.services .cards-section .card p{
+    margin-bottom: 40px;
+}
+
+.services .cards-section .card:hover {
+    scale: 1.1;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    
+}
+.services .cards-section .card:hover i{
+    color: var(--pColor);
+}
